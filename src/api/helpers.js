@@ -5,7 +5,7 @@ const SERVICE_URL = process.env.NODE_ENV === "production" ? "/api" : "http://loc
 export const getData = (url, data) => {
 
   const params = param(data)
-  return fetch(`${SERVICE_URL}/${url}?${params}`)
+  return fetch(`/api/${url}?${params}`)
   .then((res) => res.json())
   .then((res) => res.data)
 }
