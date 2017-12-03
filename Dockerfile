@@ -13,8 +13,6 @@ RUN npm install
 #Build the application
 RUN npm run build
 
-EXPOSE 3001
-
 CMD ["npm", "start:backend:prod"]
 
 FROM nginx
